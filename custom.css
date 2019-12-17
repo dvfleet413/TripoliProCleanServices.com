@@ -1,11 +1,52 @@
+body {
+  padding-top: 70px;
+  background-image: url("Media/beigeCarpet.jpg");
+}
 h1 {
   text-align: center;
-  color: white;
-  background-color: black;
 }
 
-img {
-  float: right;
-  width: 25%;
-  height: auto;
+.jumbotron img {
+  display: block;
+  max-height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.navbar {
+  background-color: rgb(27, 45, 65);
+}
+
+.carousel-inner .item img {
+    max-height: 200px;
+    height: auto;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-container {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.container-lt {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 20px;
+}
+
+.container-lt p {
+  color: black;
+}
+
+.container-dk {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.container-dk p {
+  color: white;
 }

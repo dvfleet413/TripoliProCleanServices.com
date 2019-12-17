@@ -11,14 +11,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href='custom.css' rel='stylesheet' type='text/css'>
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--custom CSS-->
+    <link href='custom.css' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">Home</a>
+    <!--Navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="index.html">Tripoli Pro Clean</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -34,6 +36,8 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="services/carpet_cleaning.html">Carpet Cleaning</a>
               <a class="dropdown-item" href="services/upholstery_cleaning.html">Upholstery Cleaning</a>
+              <a class="dropdown-item" href="services/floor_care.html">Floor Care</a>
+              <a class="dropdown-item" href="services/power_washing.html">Power Washing</a>
               <a class="dropdown-item" href="services/other_services.html">Other Services</a>
             </div>
           </li>
@@ -43,50 +47,49 @@
         </ul>
       </div>
     </nav>
+    <div class="container">
+      <p class="lead">Do you want a quote for one of our services? Fill out this form and we'll be in touch soon to schedule a free, no-obligation quote</p>
+      <form id="contact-form" method="post" action="contact.php" role="form">
 
-    <h1>Contact Us!</h1>
-    <p class="lead">Do you want a quote for one of our services? Fill out this form and we'll be in touch soon to schedule a free, no-obligation quote</p>
-    <form id="contact-form" method="post" action="contact.php" role="form">
+        <div class="messages"></div>
 
-      <div class="messages"></div>
+        <div class="controls">
 
-      <div class="controls">
-
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="form_name">Name *</label>
-              <input id="form_name" type="text" class="form-control" placeholder="Please type your name" required="required" data-error="First name is required.">
-              <div class="help-block with-errors"></div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="form_name">Name *</label>
+                <input id="form_name" type="text" class="form-control" placeholder="Please type your name" required="required" data-error="First name is required.">
+                <div class="help-block with-errors"></div>
+              </div>
             </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="form_phone">Phone *</label>
-              <input id="form_phone" type="text" class="form-control" placeholder="Please type your phone number" required="required" data-error="Phone number is required.">
-              <div class="help-block with-errors"></div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="form_phone">Phone *</label>
+                <input id="form_phone" type="text" class="form-control" placeholder="Please type your phone number" required="required" data-error="Phone number is required.">
+                <div class="help-block with-errors"></div>
+              </div>
             </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="form_email">Email *</label>
-              <input id="form_email" type="text" class="form-control" placeholder="Please type your email" required="required" data-error="Email is required.">
-              <div class="help-block with-errors"></div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="form_email">Email *</label>
+                <input id="form_email" type="text" class="form-control" placeholder="Please type your email" required="required" data-error="Email is required.">
+                <div class="help-block with-errors"></div>
+              </div>
             </div>
-          </div>
-          <div class="col-md-6">
-                <div class="form-group">
-                    <label for="form_need">What service are you most interested in? *</label>
-                    <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
-                        <option value=""></option>
-                        <option value="Carpet Cleaning">Carpet Cleaning</option>
-                        <option value="Upholstery Cleaning">Upholstery Cleaning</option>
-                        <option value="Floor Care">Floor Care</option>
-                        <option value="Other">Other</option>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="form_need">What service are you most interested in? *</label>
+                  <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                      <option value=""></option>
+                      <option value="Carpet Cleaning">Carpet Cleaning</option>
+                      <option value="Upholstery Cleaning">Upholstery Cleaning</option>
+                      <option value="Floor Care">Floor Care</option>
+                      <option value="Other">Other</option>
                     </select>
-                    <div class="help-block with-errors"></div>
+                  <div class="help-block with-errors"></div>
                 </div>
-            </div>
+              </div>
             </div>
             <div class="row">
               <div class="col-md-12">
@@ -108,6 +111,8 @@
         </div>
       </div>
     </form>
+
+  </div>
 
 
 
