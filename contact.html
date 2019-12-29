@@ -48,6 +48,7 @@
       </div>
     </nav>
     <div class="container">
+      <div class="container-lt">
       <p class="lead">Do you want a quote for one of our services? Fill out this form and we'll be in touch soon to schedule a free, no-obligation quote</p>
       <form id="contact-form" method="post" action="contact.php" role="form">
 
@@ -59,21 +60,21 @@
             <div class="col-md-6">
               <div class="form-group">
                 <label for="form_name">Name *</label>
-                <input id="form_name" type="text" class="form-control" placeholder="Please type your name" required="required" data-error="First name is required.">
+                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please type your name" required="required" data-error="First name is required.">
                 <div class="help-block with-errors"></div>
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
                 <label for="form_phone">Phone *</label>
-                <input id="form_phone" type="text" class="form-control" placeholder="Please type your phone number" required="required" data-error="Phone number is required.">
+                <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please type your phone number" required="required" data-error="Phone number is required.">
                 <div class="help-block with-errors"></div>
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
                 <label for="form_email">Email *</label>
-                <input id="form_email" type="text" class="form-control" placeholder="Please type your email" required="required" data-error="Email is required.">
+                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please type your email" required="required" data-error="Email is required.">
                 <div class="help-block with-errors"></div>
               </div>
             </div>
@@ -111,7 +112,7 @@
         </div>
       </div>
     </form>
-
+  </div>
   </div>
 
 

@@ -4,17 +4,17 @@
  */
 
 // an email address that will be in the From field of the email.
-$from = 'markproclean@yahoo.com';
+$from = 'dvfleet413@gmail.com';
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'markproclean@yahoo.com';
+$sendTo = 'dvfleet413@gmail.com';
 
 // subject of the email
 $subject = 'New message from contact form';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
-$fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message');
+$fields = array('name' => 'Name', 'phone' => 'Phone', 'email' => 'Email', 'need' => 'Need', 'message' => 'Message');
 
 // message that will be displayed when everything is OK :)
 $okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
@@ -27,8 +27,8 @@ $errorMessage = 'There was an error while submitting the form. Please try again 
  */
 
 // if you are not debugging and don't need error reporting, turn this off by error_reporting(0);
-error_reporting(E_ALL & ~E_NOTICE);
-
+//error_reporting(E_ALL & ~E_NOTICE);
+error_reporting(0);
 try
 {
 
@@ -54,6 +54,7 @@ try
     mail($sendTo, $subject, $emailText, implode("\n", $headers));
 
     $responseArray = array('type' => 'success', 'message' => $okMessage);
+    header('Location: thanks.html');
 }
 catch (\Exception $e)
 {
